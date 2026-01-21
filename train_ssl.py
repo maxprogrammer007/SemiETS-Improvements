@@ -1,9 +1,9 @@
-# train_ssl.py
-
 import torch
 from torch.optim import Adam
 from torch.amp import autocast, GradScaler
 from torch.utils.data import DataLoader
+import json
+import os
 
 from models.backbone import Backbone
 from models.recognizer import CRNN
@@ -13,12 +13,20 @@ from losses.weighted_loss import WeightedCTCLoss
 from data.ic15_subset import IC15Subset, ic15_collate_fn
 
 
+# ----------------------------------
+# Baseline simulation threshold
+# ----------------------------------
+EPS = 0.01   # samples below this are treated as "rejected" in baseline
+
+
 def train_one_epoch(
     ssl_model,
     dataloader,
     optimizer,
     device,
-    scaler
+    scaler,
+    epoch,
+    experiment_logs
 ):
     ssl_model.train()
     total_loss = 0.0
@@ -29,6 +37,10 @@ def train_one_epoch(
         targets = batch["targets"].to(device)
         input_lengths = batch["input_lengths"].to(device)
         target_lengths = batch["target_lengths"].to(device)
+
+        # Optional metadata (if available)
+        image_ids = batch.get("image_ids", None)
+        gt_texts = batch.get("gt_texts", None)
 
         optimizer.zero_grad(set_to_none=True)
 
@@ -49,6 +61,29 @@ def train_one_epoch(
         ssl_model.update_teacher()
 
         total_loss += loss.item()
+
+        # ----------------------------------
+        # Experiment logging (failure analysis)
+        # ----------------------------------
+        weights_cpu = weights.detach().cpu()
+        det_conf_cpu = det_conf.detach().cpu()
+
+        for i in range(len(weights_cpu)):
+            log_entry = {
+                "epoch": epoch,
+                "step": step,
+                "image_id": image_ids[i] if image_ids is not None else f"idx_{step}_{i}",
+                "det_conf": float(det_conf_cpu[i]),
+                "final_weight": float(weights_cpu[i]),
+                "baseline_accept": bool(weights_cpu[i] > EPS),
+                "loss": float(loss.item())
+            }
+
+            if gt_texts is not None:
+                log_entry["gt_text"] = gt_texts[i]
+                log_entry["word_length"] = len(gt_texts[i])
+
+            experiment_logs.append(log_entry)
 
         if step % 10 == 0:
             print(
@@ -74,11 +109,10 @@ def main():
         backbone=backbone,
         recognizer=recognizer,
         criterion=criterion,
-        ema_decay=0.999,
-        consistency_weight=0.1
+        ema_decay=0.999
     ).to(device)
 
-    # LSTM optimization (optional but recommended)
+    # LSTM optimization (recommended)
     ssl_model.student_recognizer.rnn.flatten_parameters()
     ssl_model.teacher_recognizer.rnn.flatten_parameters()
 
@@ -118,15 +152,26 @@ def main():
     # ----------------------------------
     # Training loop
     # ----------------------------------
+    os.makedirs("experiment_logs", exist_ok=True)
+
     epochs = 5
     for epoch in range(epochs):
+        experiment_logs = []
+
         avg_loss = train_one_epoch(
             ssl_model,
             dataloader,
             optimizer,
             device,
-            scaler
+            scaler,
+            epoch,
+            experiment_logs
         )
+
+        # Save logs for this epoch
+        with open(f"experiment_logs/epoch_{epoch}.json", "w") as f:
+            json.dump(experiment_logs, f, indent=2)
+
         print(f"[Epoch {epoch}] Avg loss: {avg_loss:.4f}")
 
 
