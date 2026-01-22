@@ -3,900 +3,900 @@
     "epoch": 3,
     "step": 0,
     "image_id": "idx_0_0",
-    "det_conf": 0.7359868288040161,
-    "final_weight": 0.02407614141702652,
-    "baseline_accept": true,
-    "loss": 0.00879666954278946
+    "det_conf": 0.3880770802497864,
+    "final_weight": 0.006487877573817968,
+    "baseline_accept": false,
+    "loss": 0.08092551678419113
   },
   {
     "epoch": 3,
     "step": 0,
     "image_id": "idx_0_1",
     "det_conf": 0.20000000298023224,
-    "final_weight": 0.001249634544365108,
+    "final_weight": 0.0012498038122430444,
     "baseline_accept": false,
-    "loss": 0.00879666954278946
+    "loss": 0.08092551678419113
   },
   {
     "epoch": 3,
     "step": 1,
     "image_id": "idx_1_0",
     "det_conf": 0.20000000298023224,
-    "final_weight": 0.001249707187525928,
+    "final_weight": 0.0012500270968303084,
     "baseline_accept": false,
-    "loss": 0.013490045443177223
+    "loss": 0.007266991771757603
   },
   {
     "epoch": 3,
     "step": 1,
     "image_id": "idx_1_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012496262788772583,
-    "baseline_accept": false,
-    "loss": 0.013490045443177223
+    "det_conf": 0.6450244784355164,
+    "final_weight": 0.02135142870247364,
+    "baseline_accept": true,
+    "loss": 0.007266991771757603
   },
   {
     "epoch": 3,
     "step": 2,
     "image_id": "idx_2_0",
-    "det_conf": 0.5094980001449585,
-    "final_weight": 0.013801433145999908,
+    "det_conf": 0.5505053997039795,
+    "final_weight": 0.01643959805369377,
     "baseline_accept": true,
-    "loss": 1.0927643415925559e-05
+    "loss": 0.13243117928504944
   },
   {
     "epoch": 3,
     "step": 2,
     "image_id": "idx_2_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012495365226641297,
+    "det_conf": 0.37186604738235474,
+    "final_weight": 0.005727127194404602,
     "baseline_accept": false,
-    "loss": 1.0927643415925559e-05
+    "loss": 0.13243117928504944
   },
   {
     "epoch": 3,
     "step": 3,
     "image_id": "idx_3_0",
-    "det_conf": 0.6154613494873047,
-    "final_weight": 0.020035667344927788,
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025886287912726402,
     "baseline_accept": true,
-    "loss": 0.10296249389648438
+    "loss": 7.824476597306784e-06
   },
   {
     "epoch": 3,
     "step": 3,
     "image_id": "idx_3_1",
-    "det_conf": 0.6655598282814026,
-    "final_weight": 0.022126488387584686,
-    "baseline_accept": true,
-    "loss": 0.10296249389648438
+    "det_conf": 0.4914000630378723,
+    "final_weight": 0.012612040154635906,
+    "baseline_accept": false,
+    "loss": 7.824476597306784e-06
   },
   {
     "epoch": 3,
     "step": 4,
     "image_id": "idx_4_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012497882125899196,
+    "det_conf": 0.24476194381713867,
+    "final_weight": 0.0019047115929424763,
     "baseline_accept": false,
-    "loss": 0.08662208169698715
+    "loss": 0.019003061577677727
   },
   {
     "epoch": 3,
     "step": 4,
     "image_id": "idx_4_1",
-    "det_conf": 0.4936399459838867,
-    "final_weight": 0.01275649480521679,
-    "baseline_accept": true,
-    "loss": 0.08662208169698715
+    "det_conf": 0.4535152316093445,
+    "final_weight": 0.01016969047486782,
+    "baseline_accept": false,
+    "loss": 0.019003061577677727
   },
   {
     "epoch": 3,
     "step": 5,
     "image_id": "idx_5_0",
-    "det_conf": 0.43027263879776,
-    "final_weight": 0.008759943768382072,
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012499948497861624,
     "baseline_accept": false,
-    "loss": 0.05890582501888275
+    "loss": 0.00725009199231863
   },
   {
     "epoch": 3,
     "step": 5,
     "image_id": "idx_5_1",
     "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012497325660660863,
+    "final_weight": 0.001250021392479539,
     "baseline_accept": false,
-    "loss": 0.05890582501888275
+    "loss": 0.00725009199231863
   },
   {
     "epoch": 3,
     "step": 6,
     "image_id": "idx_6_0",
-    "det_conf": 0.8281387686729431,
-    "final_weight": 0.025398781523108482,
+    "det_conf": 0.7722215056419373,
+    "final_weight": 0.024737665429711342,
     "baseline_accept": true,
-    "loss": 0.009264200925827026
+    "loss": 0.3840150535106659
   },
   {
     "epoch": 3,
     "step": 6,
     "image_id": "idx_6_1",
-    "det_conf": 0.22828435897827148,
-    "final_weight": 0.0016328715719282627,
-    "baseline_accept": false,
-    "loss": 0.009264200925827026
+    "det_conf": 0.6419638395309448,
+    "final_weight": 0.021222567185759544,
+    "baseline_accept": true,
+    "loss": 0.3840150535106659
   },
   {
     "epoch": 3,
     "step": 7,
     "image_id": "idx_7_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012500457232818007,
-    "baseline_accept": false,
-    "loss": 0.30757346749305725
+    "det_conf": 0.8521190285682678,
+    "final_weight": 0.025597067549824715,
+    "baseline_accept": true,
+    "loss": 0.1594363898038864
   },
   {
     "epoch": 3,
     "step": 7,
     "image_id": "idx_7_1",
     "det_conf": 0.8999999761581421,
-    "final_weight": 0.02586878277361393,
+    "final_weight": 0.025890102609992027,
     "baseline_accept": true,
-    "loss": 0.30757346749305725
+    "loss": 0.1594363898038864
   },
   {
     "epoch": 3,
     "step": 8,
     "image_id": "idx_8_0",
-    "det_conf": 0.7672744989395142,
-    "final_weight": 0.024649186059832573,
-    "baseline_accept": true,
-    "loss": 0.301188200712204
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012501071905717254,
+    "baseline_accept": false,
+    "loss": 0.0878618061542511
   },
   {
     "epoch": 3,
     "step": 8,
     "image_id": "idx_8_1",
-    "det_conf": 0.6680591702461243,
-    "final_weight": 0.02221221849322319,
+    "det_conf": 0.519423246383667,
+    "final_weight": 0.01445457711815834,
     "baseline_accept": true,
-    "loss": 0.301188200712204
+    "loss": 0.0878618061542511
   },
   {
     "epoch": 3,
     "step": 9,
     "image_id": "idx_9_0",
-    "det_conf": 0.8850332498550415,
-    "final_weight": 0.02580077387392521,
+    "det_conf": 0.7316679358482361,
+    "final_weight": 0.023989908397197723,
     "baseline_accept": true,
-    "loss": 0.31847667694091797
+    "loss": 0.42356550693511963
   },
   {
     "epoch": 3,
     "step": 9,
     "image_id": "idx_9_1",
-    "det_conf": 0.6883513331413269,
-    "final_weight": 0.02287544496357441,
+    "det_conf": 0.8657736778259277,
+    "final_weight": 0.0256997998803854,
     "baseline_accept": true,
-    "loss": 0.31847667694091797
+    "loss": 0.42356550693511963
   },
   {
     "epoch": 3,
     "step": 10,
     "image_id": "idx_10_0",
-    "det_conf": 0.750898540019989,
-    "final_weight": 0.024374373257160187,
+    "det_conf": 0.6344163417816162,
+    "final_weight": 0.020911887288093567,
     "baseline_accept": true,
-    "loss": 0.15305623412132263
+    "loss": 0.238834410905838
   },
   {
     "epoch": 3,
     "step": 10,
     "image_id": "idx_10_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012497024144977331,
-    "baseline_accept": false,
-    "loss": 0.15305623412132263
+    "det_conf": 0.5728979110717773,
+    "final_weight": 0.01777878776192665,
+    "baseline_accept": true,
+    "loss": 0.238834410905838
   },
   {
     "epoch": 3,
     "step": 11,
     "image_id": "idx_11_0",
-    "det_conf": 0.3684900403022766,
-    "final_weight": 0.005577408242970705,
+    "det_conf": 0.2256101369857788,
+    "final_weight": 0.0015930690569803119,
     "baseline_accept": false,
-    "loss": 0.05110970139503479
+    "loss": 0.28524231910705566
   },
   {
     "epoch": 3,
     "step": 11,
     "image_id": "idx_11_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012496134731918573,
-    "baseline_accept": false,
-    "loss": 0.05110970139503479
+    "det_conf": 0.7811131477355957,
+    "final_weight": 0.024866020306944847,
+    "baseline_accept": true,
+    "loss": 0.28524231910705566
   },
   {
     "epoch": 3,
     "step": 12,
     "image_id": "idx_12_0",
     "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012496559647843242,
+    "final_weight": 0.0012499158037826419,
     "baseline_accept": false,
-    "loss": 0.06906596571207047
+    "loss": 0.014604682102799416
   },
   {
     "epoch": 3,
     "step": 12,
     "image_id": "idx_12_1",
-    "det_conf": 0.3504580855369568,
-    "final_weight": 0.004826985765248537,
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012504240730777383,
     "baseline_accept": false,
-    "loss": 0.06906596571207047
+    "loss": 0.014604682102799416
   },
   {
     "epoch": 3,
     "step": 13,
     "image_id": "idx_13_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012501674937084317,
-    "baseline_accept": false,
-    "loss": 0.23671415448188782
+    "det_conf": 0.772911548614502,
+    "final_weight": 0.024746358394622803,
+    "baseline_accept": true,
+    "loss": 0.30658069252967834
   },
   {
     "epoch": 3,
     "step": 13,
     "image_id": "idx_13_1",
-    "det_conf": 0.6109294891357422,
-    "final_weight": 0.019814347848296165,
+    "det_conf": 0.5902944207191467,
+    "final_weight": 0.018755609169602394,
     "baseline_accept": true,
-    "loss": 0.23671415448188782
+    "loss": 0.30658069252967834
   },
   {
     "epoch": 3,
     "step": 14,
     "image_id": "idx_14_0",
-    "det_conf": 0.48414015769958496,
-    "final_weight": 0.012134079821407795,
+    "det_conf": 0.8494710922241211,
+    "final_weight": 0.02557775378227234,
     "baseline_accept": true,
-    "loss": 0.08978444337844849
+    "loss": 0.012989812530577183
   },
   {
     "epoch": 3,
     "step": 14,
     "image_id": "idx_14_1",
-    "det_conf": 0.8999999761581421,
-    "final_weight": 0.025878464803099632,
-    "baseline_accept": true,
-    "loss": 0.08978444337844849
+    "det_conf": 0.25662750005722046,
+    "final_weight": 0.002126099541783333,
+    "baseline_accept": false,
+    "loss": 0.012989812530577183
   },
   {
     "epoch": 3,
     "step": 15,
     "image_id": "idx_15_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012500201119109988,
-    "baseline_accept": false,
-    "loss": 0.027008147910237312
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025891495868563652,
+    "baseline_accept": true,
+    "loss": 1.071666702046059e-05
   },
   {
     "epoch": 3,
     "step": 15,
     "image_id": "idx_15_1",
-    "det_conf": 0.23190057277679443,
-    "final_weight": 0.001689425902441144,
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.001250178669579327,
     "baseline_accept": false,
-    "loss": 0.027008147910237312
+    "loss": 1.071666702046059e-05
   },
   {
     "epoch": 3,
     "step": 16,
     "image_id": "idx_16_0",
     "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012499364092946053,
+    "final_weight": 0.0012502347817644477,
     "baseline_accept": false,
-    "loss": 0.012238984927535057
+    "loss": 0.17999538779258728
   },
   {
     "epoch": 3,
     "step": 16,
     "image_id": "idx_16_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.001249998458661139,
-    "baseline_accept": false,
-    "loss": 0.012238984927535057
+    "det_conf": 0.8189054131507874,
+    "final_weight": 0.02531600184738636,
+    "baseline_accept": true,
+    "loss": 0.17999538779258728
   },
   {
     "epoch": 3,
     "step": 17,
     "image_id": "idx_17_0",
     "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012500379234552383,
+    "final_weight": 0.0012502676108852029,
     "baseline_accept": false,
-    "loss": 0.08556878566741943
+    "loss": 0.013818997889757156
   },
   {
     "epoch": 3,
     "step": 17,
     "image_id": "idx_17_1",
-    "det_conf": 0.43572914600372314,
-    "final_weight": 0.009082038886845112,
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012503518955782056,
     "baseline_accept": false,
-    "loss": 0.08556878566741943
+    "loss": 0.013818997889757156
   },
   {
     "epoch": 3,
     "step": 18,
     "image_id": "idx_18_0",
-    "det_conf": 0.7765319347381592,
-    "final_weight": 0.024793021380901337,
-    "baseline_accept": true,
-    "loss": 0.011219617910683155
+    "det_conf": 0.49331802129745483,
+    "final_weight": 0.012738502584397793,
+    "baseline_accept": false,
+    "loss": 6.162251793284668e-06
   },
   {
     "epoch": 3,
     "step": 18,
     "image_id": "idx_18_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012501486344262958,
+    "det_conf": 0.4256991744041443,
+    "final_weight": 0.008499191142618656,
     "baseline_accept": false,
-    "loss": 0.011219617910683155
+    "loss": 6.162251793284668e-06
   },
   {
     "epoch": 3,
     "step": 19,
     "image_id": "idx_19_0",
-    "det_conf": 0.6194649934768677,
-    "final_weight": 0.020237408578395844,
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025893837213516235,
     "baseline_accept": true,
-    "loss": 0.2466358095407486
+    "loss": 0.31856268644332886
   },
   {
     "epoch": 3,
     "step": 19,
     "image_id": "idx_19_1",
-    "det_conf": 0.8342222571372986,
-    "final_weight": 0.025446955114603043,
+    "det_conf": 0.5467376708984375,
+    "final_weight": 0.016204817220568657,
     "baseline_accept": true,
-    "loss": 0.2466358095407486
+    "loss": 0.31856268644332886
   },
   {
     "epoch": 3,
     "step": 20,
     "image_id": "idx_20_0",
-    "det_conf": 0.6195578575134277,
-    "final_weight": 0.020239446312189102,
-    "baseline_accept": true,
-    "loss": 0.1535390317440033
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012502105673775077,
+    "baseline_accept": false,
+    "loss": 0.009882536716759205
   },
   {
     "epoch": 3,
     "step": 20,
     "image_id": "idx_20_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012497017160058022,
+    "det_conf": 0.2600436806678772,
+    "final_weight": 0.002193536376580596,
     "baseline_accept": false,
-    "loss": 0.1535390317440033
+    "loss": 0.009882536716759205
   },
   {
     "epoch": 3,
     "step": 21,
     "image_id": "idx_21_0",
-    "det_conf": 0.8999999761581421,
-    "final_weight": 0.025881819427013397,
+    "det_conf": 0.5125391483306885,
+    "final_weight": 0.014009084552526474,
     "baseline_accept": true,
-    "loss": 0.1344432234764099
+    "loss": 0.10855845361948013
   },
   {
     "epoch": 3,
     "step": 21,
     "image_id": "idx_21_1",
-    "det_conf": 0.7590966820716858,
-    "final_weight": 0.024521101266145706,
+    "det_conf": 0.5003918409347534,
+    "final_weight": 0.013205657713115215,
     "baseline_accept": true,
-    "loss": 0.1344432234764099
+    "loss": 0.10855845361948013
   },
   {
     "epoch": 3,
     "step": 22,
     "image_id": "idx_22_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012499814620241523,
+    "det_conf": 0.4033316373825073,
+    "final_weight": 0.007263356354087591,
     "baseline_accept": false,
-    "loss": 0.009833378717303276
+    "loss": 0.07163570076227188
   },
   {
     "epoch": 3,
     "step": 22,
     "image_id": "idx_22_1",
-    "det_conf": 0.4388473629951477,
-    "final_weight": 0.009269618429243565,
+    "det_conf": 0.3344946503639221,
+    "final_weight": 0.004229737911373377,
     "baseline_accept": false,
-    "loss": 0.009833378717303276
+    "loss": 0.07163570076227188
   },
   {
     "epoch": 3,
     "step": 23,
     "image_id": "idx_23_0",
-    "det_conf": 0.4550475478172302,
-    "final_weight": 0.010263130068778992,
-    "baseline_accept": true,
-    "loss": 0.3431191146373749
+    "det_conf": 0.3097086548805237,
+    "final_weight": 0.0034226186107844114,
+    "baseline_accept": false,
+    "loss": 0.0340871699154377
   },
   {
     "epoch": 3,
     "step": 23,
     "image_id": "idx_23_1",
-    "det_conf": 0.6184390187263489,
-    "final_weight": 0.020188385620713234,
-    "baseline_accept": true,
-    "loss": 0.3431191146373749
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012500063749030232,
+    "baseline_accept": false,
+    "loss": 0.0340871699154377
   },
   {
     "epoch": 3,
     "step": 24,
     "image_id": "idx_24_0",
-    "det_conf": 0.8026110529899597,
-    "final_weight": 0.025134708732366562,
+    "det_conf": 0.657339870929718,
+    "final_weight": 0.021839801222085953,
     "baseline_accept": true,
-    "loss": 0.21233399212360382
+    "loss": 0.19035020470619202
   },
   {
     "epoch": 3,
     "step": 24,
     "image_id": "idx_24_1",
-    "det_conf": 0.8814299702644348,
-    "final_weight": 0.025794124230742455,
-    "baseline_accept": true,
-    "loss": 0.21233399212360382
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012503430480137467,
+    "baseline_accept": false,
+    "loss": 0.19035020470619202
   },
   {
     "epoch": 3,
     "step": 25,
     "image_id": "idx_25_0",
-    "det_conf": 0.5921624898910522,
-    "final_weight": 0.018856486305594444,
-    "baseline_accept": true,
-    "loss": 0.2154664397239685
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012501769233494997,
+    "baseline_accept": false,
+    "loss": 0.08707690238952637
   },
   {
     "epoch": 3,
     "step": 25,
     "image_id": "idx_25_1",
-    "det_conf": 0.5211889743804932,
-    "final_weight": 0.014567621983587742,
-    "baseline_accept": true,
-    "loss": 0.2154664397239685
+    "det_conf": 0.48711174726486206,
+    "final_weight": 0.012336863204836845,
+    "baseline_accept": false,
+    "loss": 0.08707690238952637
   },
   {
     "epoch": 3,
     "step": 26,
     "image_id": "idx_26_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012495428090915084,
+    "det_conf": 0.3123910427093506,
+    "final_weight": 0.0035038688220083714,
     "baseline_accept": false,
-    "loss": 0.024066975340247154
+    "loss": 0.031317681074142456
   },
   {
     "epoch": 3,
     "step": 26,
     "image_id": "idx_26_1",
-    "det_conf": 0.22638022899627686,
-    "final_weight": 0.0016051186248660088,
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.001249988446943462,
     "baseline_accept": false,
-    "loss": 0.024066975340247154
+    "loss": 0.031317681074142456
   },
   {
     "epoch": 3,
     "step": 27,
     "image_id": "idx_27_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012499962467700243,
+    "det_conf": 0.48962968587875366,
+    "final_weight": 0.012503066100180149,
     "baseline_accept": false,
-    "loss": 0.05145711079239845
+    "loss": 0.07711223512887955
   },
   {
     "epoch": 3,
     "step": 27,
     "image_id": "idx_27_1",
-    "det_conf": 0.4548102021217346,
-    "final_weight": 0.010252716951072216,
-    "baseline_accept": true,
-    "loss": 0.05145711079239845
+    "det_conf": 0.20419061183929443,
+    "final_weight": 0.001301283366046846,
+    "baseline_accept": false,
+    "loss": 0.07711223512887955
   },
   {
     "epoch": 3,
     "step": 28,
     "image_id": "idx_28_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012501324526965618,
-    "baseline_accept": false,
-    "loss": 0.09208618849515915
+    "det_conf": 0.8677698969841003,
+    "final_weight": 0.025715770199894905,
+    "baseline_accept": true,
+    "loss": 0.2759973406791687
   },
   {
     "epoch": 3,
     "step": 28,
     "image_id": "idx_28_1",
-    "det_conf": 0.47057706117630005,
-    "final_weight": 0.011254160664975643,
-    "baseline_accept": true,
-    "loss": 0.09208618849515915
+    "det_conf": 0.48886197805404663,
+    "final_weight": 0.012450949288904667,
+    "baseline_accept": false,
+    "loss": 0.2759973406791687
   },
   {
     "epoch": 3,
     "step": 29,
     "image_id": "idx_29_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012499683070927858,
-    "baseline_accept": false,
-    "loss": 0.2267031967639923
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025904808193445206,
+    "baseline_accept": true,
+    "loss": 0.23179781436920166
   },
   {
     "epoch": 3,
     "step": 29,
     "image_id": "idx_29_1",
-    "det_conf": 0.8629900813102722,
-    "final_weight": 0.025682302191853523,
-    "baseline_accept": true,
-    "loss": 0.2267031967639923
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012500815792009234,
+    "baseline_accept": false,
+    "loss": 0.23179781436920166
   },
   {
     "epoch": 3,
     "step": 30,
     "image_id": "idx_30_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.001250406727194786,
+    "det_conf": 0.4737895727157593,
+    "final_weight": 0.011465510353446007,
     "baseline_accept": false,
-    "loss": 0.14735013246536255
+    "loss": 0.15107755362987518
   },
   {
     "epoch": 3,
     "step": 30,
     "image_id": "idx_30_1",
-    "det_conf": 0.4731706380844116,
-    "final_weight": 0.011420434340834618,
-    "baseline_accept": true,
-    "loss": 0.14735013246536255
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012507073115557432,
+    "baseline_accept": false,
+    "loss": 0.15107755362987518
   },
   {
     "epoch": 3,
     "step": 31,
     "image_id": "idx_31_0",
-    "det_conf": 0.5567178726196289,
-    "final_weight": 0.016826044768095016,
-    "baseline_accept": true,
-    "loss": 0.32130029797554016
+    "det_conf": 0.4848129153251648,
+    "final_weight": 0.012182076461613178,
+    "baseline_accept": false,
+    "loss": 0.0668795257806778
   },
   {
     "epoch": 3,
     "step": 31,
     "image_id": "idx_31_1",
-    "det_conf": 0.5964497923851013,
-    "final_weight": 0.019082078710198402,
+    "det_conf": 0.8560561537742615,
+    "final_weight": 0.025646699592471123,
     "baseline_accept": true,
-    "loss": 0.32130029797554016
+    "loss": 0.0668795257806778
   },
   {
     "epoch": 3,
     "step": 32,
     "image_id": "idx_32_0",
-    "det_conf": 0.8770532608032227,
-    "final_weight": 0.02577129565179348,
+    "det_conf": 0.7637044191360474,
+    "final_weight": 0.024603962898254395,
     "baseline_accept": true,
-    "loss": 0.17172682285308838
+    "loss": 0.2122388631105423
   },
   {
     "epoch": 3,
     "step": 32,
     "image_id": "idx_32_1",
-    "det_conf": 0.36046481132507324,
-    "final_weight": 0.0052339318208396435,
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012509053340181708,
     "baseline_accept": false,
-    "loss": 0.17172682285308838
+    "loss": 0.2122388631105423
   },
   {
     "epoch": 3,
     "step": 33,
     "image_id": "idx_33_0",
     "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012498624855652452,
+    "final_weight": 0.0012506379280239344,
     "baseline_accept": false,
-    "loss": 0.11826501786708832
+    "loss": 0.17906072735786438
   },
   {
     "epoch": 3,
     "step": 33,
     "image_id": "idx_33_1",
-    "det_conf": 0.8999999761581421,
-    "final_weight": 0.025894703343510628,
+    "det_conf": 0.6219187378883362,
+    "final_weight": 0.020354198291897774,
     "baseline_accept": true,
-    "loss": 0.11826501786708832
+    "loss": 0.17906072735786438
   },
   {
     "epoch": 3,
     "step": 34,
     "image_id": "idx_34_0",
-    "det_conf": 0.5067220330238342,
-    "final_weight": 0.013623930513858795,
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025895170867443085,
     "baseline_accept": true,
-    "loss": 0.2903030216693878
+    "loss": 0.23761573433876038
   },
   {
     "epoch": 3,
     "step": 34,
     "image_id": "idx_34_1",
-    "det_conf": 0.8746655583381653,
-    "final_weight": 0.025753743946552277,
-    "baseline_accept": true,
-    "loss": 0.2903030216693878
+    "det_conf": 0.27895545959472656,
+    "final_weight": 0.0026058300863951445,
+    "baseline_accept": false,
+    "loss": 0.23761573433876038
   },
   {
     "epoch": 3,
     "step": 35,
     "image_id": "idx_35_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012504609767347574,
-    "baseline_accept": false,
-    "loss": 0.07628423720598221
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025895467028021812,
+    "baseline_accept": true,
+    "loss": 0.3967682123184204
   },
   {
     "epoch": 3,
     "step": 35,
     "image_id": "idx_35_1",
-    "det_conf": 0.4541434049606323,
-    "final_weight": 0.010208657942712307,
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025890687480568886,
     "baseline_accept": true,
-    "loss": 0.07628423720598221
+    "loss": 0.3967682123184204
   },
   {
     "epoch": 3,
     "step": 36,
     "image_id": "idx_36_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012506019556894898,
-    "baseline_accept": false,
-    "loss": 0.02021721750497818
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025887714698910713,
+    "baseline_accept": true,
+    "loss": 0.5180783271789551
   },
   {
     "epoch": 3,
     "step": 36,
     "image_id": "idx_36_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.001250073779374361,
-    "baseline_accept": false,
-    "loss": 0.02021721750497818
+    "det_conf": 0.8470572829246521,
+    "final_weight": 0.02558641880750656,
+    "baseline_accept": true,
+    "loss": 0.5180783271789551
   },
   {
     "epoch": 3,
     "step": 37,
     "image_id": "idx_37_0",
-    "det_conf": 0.46572548151016235,
-    "final_weight": 0.010943909175693989,
-    "baseline_accept": true,
-    "loss": 0.11578533053398132
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012508737854659557,
+    "baseline_accept": false,
+    "loss": 0.007165106479078531
   },
   {
     "epoch": 3,
     "step": 37,
     "image_id": "idx_37_1",
-    "det_conf": 0.3071134686470032,
-    "final_weight": 0.0033449481707066298,
-    "baseline_accept": false,
-    "loss": 0.11578533053398132
+    "det_conf": 0.5406856536865234,
+    "final_weight": 0.015830831602215767,
+    "baseline_accept": true,
+    "loss": 0.007165106479078531
   },
   {
     "epoch": 3,
     "step": 38,
     "image_id": "idx_38_0",
-    "det_conf": 0.8264102935791016,
-    "final_weight": 0.025385621935129166,
-    "baseline_accept": true,
-    "loss": 0.34100809693336487
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012505758786574006,
+    "baseline_accept": false,
+    "loss": 0.2412176877260208
   },
   {
     "epoch": 3,
     "step": 38,
     "image_id": "idx_38_1",
-    "det_conf": 0.5389369130134583,
-    "final_weight": 0.015721546486020088,
+    "det_conf": 0.7850027680397034,
+    "final_weight": 0.024933112785220146,
     "baseline_accept": true,
-    "loss": 0.34100809693336487
+    "loss": 0.2412176877260208
   },
   {
     "epoch": 3,
     "step": 39,
     "image_id": "idx_39_0",
-    "det_conf": 0.3050966262817383,
-    "final_weight": 0.0032861840445548296,
-    "baseline_accept": false,
-    "loss": 0.16698075830936432
+    "det_conf": 0.7587226629257202,
+    "final_weight": 0.024523606523871422,
+    "baseline_accept": true,
+    "loss": 0.43393564224243164
   },
   {
     "epoch": 3,
     "step": 39,
     "image_id": "idx_39_1",
-    "det_conf": 0.868191123008728,
-    "final_weight": 0.025720208883285522,
+    "det_conf": 0.8671666383743286,
+    "final_weight": 0.02572001703083515,
     "baseline_accept": true,
-    "loss": 0.16698075830936432
+    "loss": 0.43393564224243164
   },
   {
     "epoch": 3,
     "step": 40,
     "image_id": "idx_40_0",
-    "det_conf": 0.27520227432250977,
-    "final_weight": 0.002518465043976903,
+    "det_conf": 0.414775013923645,
+    "final_weight": 0.0078877042979002,
     "baseline_accept": false,
-    "loss": 0.05803726986050606
+    "loss": 0.08195523172616959
   },
   {
     "epoch": 3,
     "step": 40,
     "image_id": "idx_40_1",
-    "det_conf": 0.3971811532974243,
-    "final_weight": 0.006946311332285404,
+    "det_conf": 0.40376758575439453,
+    "final_weight": 0.007287711836397648,
     "baseline_accept": false,
-    "loss": 0.05803726986050606
+    "loss": 0.08195523172616959
   },
   {
     "epoch": 3,
     "step": 41,
     "image_id": "idx_41_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012503021862357855,
+    "det_conf": 0.37512654066085815,
+    "final_weight": 0.00587987806648016,
     "baseline_accept": false,
-    "loss": 0.131495863199234
+    "loss": 0.046854205429553986
   },
   {
     "epoch": 3,
     "step": 41,
     "image_id": "idx_41_1",
-    "det_conf": 0.6126060485839844,
-    "final_weight": 0.019910903647542,
-    "baseline_accept": true,
-    "loss": 0.131495863199234
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.001250545377843082,
+    "baseline_accept": false,
+    "loss": 0.046854205429553986
   },
   {
     "epoch": 3,
     "step": 42,
     "image_id": "idx_42_0",
-    "det_conf": 0.526533305644989,
-    "final_weight": 0.014918342232704163,
-    "baseline_accept": true,
-    "loss": 0.12277735024690628
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012504752958193421,
+    "baseline_accept": false,
+    "loss": 0.07050220668315887
   },
   {
     "epoch": 3,
     "step": 42,
     "image_id": "idx_42_1",
-    "det_conf": 0.8602699041366577,
-    "final_weight": 0.025669895112514496,
-    "baseline_accept": true,
-    "loss": 0.12277735024690628
+    "det_conf": 0.3887568712234497,
+    "final_weight": 0.006528611294925213,
+    "baseline_accept": false,
+    "loss": 0.07050220668315887
   },
   {
     "epoch": 3,
     "step": 43,
     "image_id": "idx_43_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012502297759056091,
+    "det_conf": 0.4510924220085144,
+    "final_weight": 0.010029200464487076,
     "baseline_accept": false,
-    "loss": 0.06481736153364182
+    "loss": 0.21486282348632812
   },
   {
     "epoch": 3,
     "step": 43,
     "image_id": "idx_43_1",
-    "det_conf": 0.4506445527076721,
-    "final_weight": 0.009996593929827213,
-    "baseline_accept": false,
-    "loss": 0.06481736153364182
+    "det_conf": 0.6404743194580078,
+    "final_weight": 0.02117474563419819,
+    "baseline_accept": true,
+    "loss": 0.21486282348632812
   },
   {
     "epoch": 3,
     "step": 44,
     "image_id": "idx_44_0",
-    "det_conf": 0.41079843044281006,
-    "final_weight": 0.007665683515369892,
-    "baseline_accept": false,
-    "loss": 0.06642375141382217
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.025903945788741112,
+    "baseline_accept": true,
+    "loss": 0.19702592492103577
   },
   {
     "epoch": 3,
     "step": 44,
     "image_id": "idx_44_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012503971811383963,
-    "baseline_accept": false,
-    "loss": 0.06642375141382217
+    "det_conf": 0.6752657890319824,
+    "final_weight": 0.022477377206087112,
+    "baseline_accept": true,
+    "loss": 0.19702592492103577
   },
   {
     "epoch": 3,
     "step": 45,
     "image_id": "idx_45_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012499050935730338,
+    "det_conf": 0.3914867639541626,
+    "final_weight": 0.006661430466920137,
     "baseline_accept": false,
-    "loss": 0.20316007733345032
+    "loss": 0.13229618966579437
   },
   {
     "epoch": 3,
     "step": 45,
     "image_id": "idx_45_1",
-    "det_conf": 0.7521079182624817,
-    "final_weight": 0.024415429681539536,
-    "baseline_accept": true,
-    "loss": 0.20316007733345032
+    "det_conf": 0.4670524597167969,
+    "final_weight": 0.011032490991055965,
+    "baseline_accept": false,
+    "loss": 0.13229618966579437
   },
   {
     "epoch": 3,
     "step": 46,
     "image_id": "idx_46_0",
-    "det_conf": 0.7504536509513855,
-    "final_weight": 0.02437339909374714,
-    "baseline_accept": true,
-    "loss": 0.19562913477420807
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012509834486991167,
+    "baseline_accept": false,
+    "loss": 0.20128948986530304
   },
   {
     "epoch": 3,
     "step": 46,
     "image_id": "idx_46_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012505230261012912,
-    "baseline_accept": false,
-    "loss": 0.19562913477420807
+    "det_conf": 0.7833806872367859,
+    "final_weight": 0.02491084858775139,
+    "baseline_accept": true,
+    "loss": 0.20128948986530304
   },
   {
     "epoch": 3,
     "step": 47,
     "image_id": "idx_47_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012503820471465588,
-    "baseline_accept": false,
-    "loss": 0.02151038870215416
+    "det_conf": 0.6490667462348938,
+    "final_weight": 0.02152922749519348,
+    "baseline_accept": true,
+    "loss": 0.41471418738365173
   },
   {
     "epoch": 3,
     "step": 47,
     "image_id": "idx_47_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012505045160651207,
-    "baseline_accept": false,
-    "loss": 0.02151038870215416
+    "det_conf": 0.8999999761581421,
+    "final_weight": 0.02590373530983925,
+    "baseline_accept": true,
+    "loss": 0.41471418738365173
   },
   {
     "epoch": 3,
     "step": 48,
     "image_id": "idx_48_0",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012498382711783051,
-    "baseline_accept": false,
-    "loss": 0.019775640219449997
+    "det_conf": 0.8194501996040344,
+    "final_weight": 0.025335390120744705,
+    "baseline_accept": true,
+    "loss": 0.3726254999637604
   },
   {
     "epoch": 3,
     "step": 48,
     "image_id": "idx_48_1",
-    "det_conf": 0.20000000298023224,
-    "final_weight": 0.0012512352550402284,
-    "baseline_accept": false,
-    "loss": 0.019775640219449997
+    "det_conf": 0.6325251460075378,
+    "final_weight": 0.02083989605307579,
+    "baseline_accept": true,
+    "loss": 0.3726254999637604
   },
   {
     "epoch": 3,
     "step": 49,
     "image_id": "idx_49_0",
-    "det_conf": 0.513192355632782,
-    "final_weight": 0.01404936145991087,
-    "baseline_accept": true,
-    "loss": 0.1841348111629486
+    "det_conf": 0.41332072019577026,
+    "final_weight": 0.007809254806488752,
+    "baseline_accept": false,
+    "loss": 0.057617127895355225
   },
   {
     "epoch": 3,
     "step": 49,
     "image_id": "idx_49_1",
-    "det_conf": 0.8999999761581421,
-    "final_weight": 0.025904668495059013,
-    "baseline_accept": true,
-    "loss": 0.1841348111629486
+    "det_conf": 0.20000000298023224,
+    "final_weight": 0.0012506110360845923,
+    "baseline_accept": false,
+    "loss": 0.057617127895355225
   }
 ]
