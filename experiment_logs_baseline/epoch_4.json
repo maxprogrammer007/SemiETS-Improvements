@@ -1,0 +1,802 @@
+[
+  {
+    "epoch": 4,
+    "step": 0,
+    "image_id": "idx_0_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 0,
+    "image_id": "idx_0_1",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 8.320908546447754
+  },
+  {
+    "epoch": 4,
+    "step": 1,
+    "image_id": "idx_1_0",
+    "det_conf": 0.6896704435348511,
+    "baseline_accept": true,
+    "loss": 11.82297134399414
+  },
+  {
+    "epoch": 4,
+    "step": 1,
+    "image_id": "idx_1_1",
+    "det_conf": 0.6369125843048096,
+    "baseline_accept": true,
+    "loss": 11.82297134399414
+  },
+  {
+    "epoch": 4,
+    "step": 2,
+    "image_id": "idx_2_0",
+    "det_conf": 0.7428491711616516,
+    "baseline_accept": true,
+    "loss": 8.213384628295898
+  },
+  {
+    "epoch": 4,
+    "step": 2,
+    "image_id": "idx_2_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 3,
+    "image_id": "idx_3_0",
+    "det_conf": 0.31026405096054077,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 3,
+    "image_id": "idx_3_1",
+    "det_conf": 0.7170531153678894,
+    "baseline_accept": true,
+    "loss": 11.299219131469727
+  },
+  {
+    "epoch": 4,
+    "step": 4,
+    "image_id": "idx_4_0",
+    "det_conf": 0.6921712756156921,
+    "baseline_accept": true,
+    "loss": 17.092975616455078
+  },
+  {
+    "epoch": 4,
+    "step": 4,
+    "image_id": "idx_4_1",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 17.092975616455078
+  },
+  {
+    "epoch": 4,
+    "step": 5,
+    "image_id": "idx_5_0",
+    "det_conf": 0.7138565182685852,
+    "baseline_accept": true,
+    "loss": 6.712605953216553
+  },
+  {
+    "epoch": 4,
+    "step": 5,
+    "image_id": "idx_5_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 6,
+    "image_id": "idx_6_0",
+    "det_conf": 0.5321639180183411,
+    "baseline_accept": true,
+    "loss": 16.71419906616211
+  },
+  {
+    "epoch": 4,
+    "step": 6,
+    "image_id": "idx_6_1",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 16.71419906616211
+  },
+  {
+    "epoch": 4,
+    "step": 7,
+    "image_id": "idx_7_0",
+    "det_conf": 0.706481397151947,
+    "baseline_accept": true,
+    "loss": 12.193175315856934
+  },
+  {
+    "epoch": 4,
+    "step": 7,
+    "image_id": "idx_7_1",
+    "det_conf": 0.8163245916366577,
+    "baseline_accept": true,
+    "loss": 12.193175315856934
+  },
+  {
+    "epoch": 4,
+    "step": 8,
+    "image_id": "idx_8_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 8,
+    "image_id": "idx_8_1",
+    "det_conf": 0.7681047916412354,
+    "baseline_accept": true,
+    "loss": 6.432126998901367
+  },
+  {
+    "epoch": 4,
+    "step": 9,
+    "image_id": "idx_9_0",
+    "det_conf": 0.30093514919281006,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 9,
+    "image_id": "idx_9_1",
+    "det_conf": 0.47740083932876587,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 10,
+    "image_id": "idx_10_0",
+    "det_conf": 0.21183502674102783,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 10,
+    "image_id": "idx_10_1",
+    "det_conf": 0.43470221757888794,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 11,
+    "image_id": "idx_11_0",
+    "det_conf": 0.48765939474105835,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 11,
+    "image_id": "idx_11_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 12,
+    "image_id": "idx_12_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 12,
+    "image_id": "idx_12_1",
+    "det_conf": 0.3593400716781616,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 13,
+    "image_id": "idx_13_0",
+    "det_conf": 0.8733952045440674,
+    "baseline_accept": true,
+    "loss": 4.475708484649658
+  },
+  {
+    "epoch": 4,
+    "step": 13,
+    "image_id": "idx_13_1",
+    "det_conf": 0.3316190838813782,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 14,
+    "image_id": "idx_14_0",
+    "det_conf": 0.4897534251213074,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 14,
+    "image_id": "idx_14_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 15,
+    "image_id": "idx_15_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 15,
+    "image_id": "idx_15_1",
+    "det_conf": 0.6586288809776306,
+    "baseline_accept": true,
+    "loss": 9.074467658996582
+  },
+  {
+    "epoch": 4,
+    "step": 16,
+    "image_id": "idx_16_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 16,
+    "image_id": "idx_16_1",
+    "det_conf": 0.357092022895813,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 17,
+    "image_id": "idx_17_0",
+    "det_conf": 0.8542304039001465,
+    "baseline_accept": true,
+    "loss": 8.134206771850586
+  },
+  {
+    "epoch": 4,
+    "step": 17,
+    "image_id": "idx_17_1",
+    "det_conf": 0.3468630909919739,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 18,
+    "image_id": "idx_18_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 18,
+    "image_id": "idx_18_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 19,
+    "image_id": "idx_19_0",
+    "det_conf": 0.6929528117179871,
+    "baseline_accept": true,
+    "loss": 5.841508388519287
+  },
+  {
+    "epoch": 4,
+    "step": 19,
+    "image_id": "idx_19_1",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 5.841508388519287
+  },
+  {
+    "epoch": 4,
+    "step": 20,
+    "image_id": "idx_20_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 20,
+    "image_id": "idx_20_1",
+    "det_conf": 0.3801991939544678,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 21,
+    "image_id": "idx_21_0",
+    "det_conf": 0.6863968968391418,
+    "baseline_accept": true,
+    "loss": 11.772659301757812
+  },
+  {
+    "epoch": 4,
+    "step": 21,
+    "image_id": "idx_21_1",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 11.772659301757812
+  },
+  {
+    "epoch": 4,
+    "step": 22,
+    "image_id": "idx_22_0",
+    "det_conf": 0.741894543170929,
+    "baseline_accept": true,
+    "loss": 12.346637725830078
+  },
+  {
+    "epoch": 4,
+    "step": 22,
+    "image_id": "idx_22_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 23,
+    "image_id": "idx_23_0",
+    "det_conf": 0.42467814683914185,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 23,
+    "image_id": "idx_23_1",
+    "det_conf": 0.3455774188041687,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 24,
+    "image_id": "idx_24_0",
+    "det_conf": 0.8244308829307556,
+    "baseline_accept": true,
+    "loss": 7.945366859436035
+  },
+  {
+    "epoch": 4,
+    "step": 24,
+    "image_id": "idx_24_1",
+    "det_conf": 0.5633060932159424,
+    "baseline_accept": true,
+    "loss": 7.945366859436035
+  },
+  {
+    "epoch": 4,
+    "step": 25,
+    "image_id": "idx_25_0",
+    "det_conf": 0.5948184132575989,
+    "baseline_accept": true,
+    "loss": 5.841122150421143
+  },
+  {
+    "epoch": 4,
+    "step": 25,
+    "image_id": "idx_25_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 26,
+    "image_id": "idx_26_0",
+    "det_conf": 0.6377853751182556,
+    "baseline_accept": true,
+    "loss": 5.855733394622803
+  },
+  {
+    "epoch": 4,
+    "step": 26,
+    "image_id": "idx_26_1",
+    "det_conf": 0.53412926197052,
+    "baseline_accept": true,
+    "loss": 5.855733394622803
+  },
+  {
+    "epoch": 4,
+    "step": 27,
+    "image_id": "idx_27_0",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 5.332848072052002
+  },
+  {
+    "epoch": 4,
+    "step": 27,
+    "image_id": "idx_27_1",
+    "det_conf": 0.7538825273513794,
+    "baseline_accept": true,
+    "loss": 5.332848072052002
+  },
+  {
+    "epoch": 4,
+    "step": 28,
+    "image_id": "idx_28_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 28,
+    "image_id": "idx_28_1",
+    "det_conf": 0.3041679263114929,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 29,
+    "image_id": "idx_29_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 29,
+    "image_id": "idx_29_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 30,
+    "image_id": "idx_30_0",
+    "det_conf": 0.26768016815185547,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 30,
+    "image_id": "idx_30_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 31,
+    "image_id": "idx_31_0",
+    "det_conf": 0.3458102345466614,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 31,
+    "image_id": "idx_31_1",
+    "det_conf": 0.29695624113082886,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 32,
+    "image_id": "idx_32_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 32,
+    "image_id": "idx_32_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 33,
+    "image_id": "idx_33_0",
+    "det_conf": 0.6051598787307739,
+    "baseline_accept": true,
+    "loss": 6.495062828063965
+  },
+  {
+    "epoch": 4,
+    "step": 33,
+    "image_id": "idx_33_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 34,
+    "image_id": "idx_34_0",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 4.998671531677246
+  },
+  {
+    "epoch": 4,
+    "step": 34,
+    "image_id": "idx_34_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 35,
+    "image_id": "idx_35_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 35,
+    "image_id": "idx_35_1",
+    "det_conf": 0.7474901676177979,
+    "baseline_accept": true,
+    "loss": 10.729719161987305
+  },
+  {
+    "epoch": 4,
+    "step": 36,
+    "image_id": "idx_36_0",
+    "det_conf": 0.8295389413833618,
+    "baseline_accept": true,
+    "loss": 13.223262786865234
+  },
+  {
+    "epoch": 4,
+    "step": 36,
+    "image_id": "idx_36_1",
+    "det_conf": 0.8405210971832275,
+    "baseline_accept": true,
+    "loss": 13.223262786865234
+  },
+  {
+    "epoch": 4,
+    "step": 37,
+    "image_id": "idx_37_0",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 13.813865661621094
+  },
+  {
+    "epoch": 4,
+    "step": 37,
+    "image_id": "idx_37_1",
+    "det_conf": 0.620108962059021,
+    "baseline_accept": true,
+    "loss": 13.813865661621094
+  },
+  {
+    "epoch": 4,
+    "step": 38,
+    "image_id": "idx_38_0",
+    "det_conf": 0.44511836767196655,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 38,
+    "image_id": "idx_38_1",
+    "det_conf": 0.5187759399414062,
+    "baseline_accept": true,
+    "loss": 4.91285514831543
+  },
+  {
+    "epoch": 4,
+    "step": 39,
+    "image_id": "idx_39_0",
+    "det_conf": 0.7805050611495972,
+    "baseline_accept": true,
+    "loss": 7.677130222320557
+  },
+  {
+    "epoch": 4,
+    "step": 39,
+    "image_id": "idx_39_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 40,
+    "image_id": "idx_40_0",
+    "det_conf": 0.8503153920173645,
+    "baseline_accept": true,
+    "loss": 9.225061416625977
+  },
+  {
+    "epoch": 4,
+    "step": 40,
+    "image_id": "idx_40_1",
+    "det_conf": 0.2916971445083618,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 41,
+    "image_id": "idx_41_0",
+    "det_conf": 0.23955076932907104,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 41,
+    "image_id": "idx_41_1",
+    "det_conf": 0.5041805505752563,
+    "baseline_accept": true,
+    "loss": 7.689245223999023
+  },
+  {
+    "epoch": 4,
+    "step": 42,
+    "image_id": "idx_42_0",
+    "det_conf": 0.4507436156272888,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 42,
+    "image_id": "idx_42_1",
+    "det_conf": 0.34372979402542114,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 43,
+    "image_id": "idx_43_0",
+    "det_conf": 0.5244986414909363,
+    "baseline_accept": true,
+    "loss": 17.861980438232422
+  },
+  {
+    "epoch": 4,
+    "step": 43,
+    "image_id": "idx_43_1",
+    "det_conf": 0.5783206820487976,
+    "baseline_accept": true,
+    "loss": 17.861980438232422
+  },
+  {
+    "epoch": 4,
+    "step": 44,
+    "image_id": "idx_44_0",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 4.699441909790039
+  },
+  {
+    "epoch": 4,
+    "step": 44,
+    "image_id": "idx_44_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 45,
+    "image_id": "idx_45_0",
+    "det_conf": 0.3788955807685852,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 45,
+    "image_id": "idx_45_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 46,
+    "image_id": "idx_46_0",
+    "det_conf": 0.5744708776473999,
+    "baseline_accept": true,
+    "loss": 10.53686809539795
+  },
+  {
+    "epoch": 4,
+    "step": 46,
+    "image_id": "idx_46_1",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 47,
+    "image_id": "idx_47_0",
+    "det_conf": 0.20000000298023224,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 47,
+    "image_id": "idx_47_1",
+    "det_conf": 0.5726829171180725,
+    "baseline_accept": true,
+    "loss": 6.034526824951172
+  },
+  {
+    "epoch": 4,
+    "step": 48,
+    "image_id": "idx_48_0",
+    "det_conf": 0.4888167977333069,
+    "baseline_accept": false,
+    "loss": 0.0
+  },
+  {
+    "epoch": 4,
+    "step": 48,
+    "image_id": "idx_48_1",
+    "det_conf": 0.8999999761581421,
+    "baseline_accept": true,
+    "loss": 4.683453559875488
+  },
+  {
+    "epoch": 4,
+    "step": 49,
+    "image_id": "idx_49_0",
+    "det_conf": 0.6367477774620056,
+    "baseline_accept": true,
+    "loss": 5.815838813781738
+  },
+  {
+    "epoch": 4,
+    "step": 49,
+    "image_id": "idx_49_1",
+    "det_conf": 0.5858993530273438,
+    "baseline_accept": true,
+    "loss": 5.815838813781738
+  }
+]
