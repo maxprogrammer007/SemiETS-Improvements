@@ -14,9 +14,9 @@ from data.ic15_subset import IC15Subset, ic15_collate_fn
 
 
 # ----------------------------------
-# Baseline simulation threshold
+# Baseline detection threshold (for analysis only)
 # ----------------------------------
-EPS = 0.01   # samples below this are treated as "rejected" in baseline
+T_D = 0.5   # SemiETS-style detection threshold
 
 
 def train_one_epoch(
@@ -38,7 +38,6 @@ def train_one_epoch(
         input_lengths = batch["input_lengths"].to(device)
         target_lengths = batch["target_lengths"].to(device)
 
-        # Optional metadata (if available)
         image_ids = batch.get("image_ids", None)
         gt_texts = batch.get("gt_texts", None)
 
@@ -63,7 +62,7 @@ def train_one_epoch(
         total_loss += loss.item()
 
         # ----------------------------------
-        # Experiment logging (failure analysis)
+        # Logging for failure analysis
         # ----------------------------------
         weights_cpu = weights.detach().cpu()
         det_conf_cpu = det_conf.detach().cpu()
@@ -75,7 +74,7 @@ def train_one_epoch(
                 "image_id": image_ids[i] if image_ids is not None else f"idx_{step}_{i}",
                 "det_conf": float(det_conf_cpu[i]),
                 "final_weight": float(weights_cpu[i]),
-                "baseline_accept": bool(weights_cpu[i] > EPS),
+                "baseline_accept": bool(det_conf_cpu[i] > T_D),
                 "loss": float(loss.item())
             }
 
@@ -112,12 +111,11 @@ def main():
         ema_decay=0.999
     ).to(device)
 
-    # LSTM optimization (recommended)
     ssl_model.student_recognizer.rnn.flatten_parameters()
     ssl_model.teacher_recognizer.rnn.flatten_parameters()
 
     # ----------------------------------
-    # Optimizer (STUDENT ONLY)
+    # Optimizer (student only)
     # ----------------------------------
     optimizer = Adam(
         list(ssl_model.student_backbone.parameters()) +
@@ -128,13 +126,13 @@ def main():
     scaler = GradScaler()
 
     # ----------------------------------
-    # Dataset & Dataloader
+    # Dataset
     # ----------------------------------
     vocab = "0123456789abcdefghijklmnopqrstuvwxyz"
 
     dataset = IC15Subset(
-        image_dir="D:\\semiETS stuffs\\semiets_scratch\\data\\ic15\\images",
-        annotation_json="D:\\semiETS stuffs\\semiets_scratch\\data\\ic15\\ic15_subset.json",
+        image_dir="D:/semiETS stuffs/semiets_scratch/data/ic15/images",
+        annotation_json="D:/semiETS stuffs/semiets_scratch/data/ic15/ic15_subset.json",
         vocab=vocab,
         max_samples=100,
         train=True
@@ -142,7 +140,7 @@ def main():
 
     dataloader = DataLoader(
         dataset,
-        batch_size=2,          # safe for 4GB VRAM
+        batch_size=2,
         shuffle=True,
         num_workers=2,
         collate_fn=ic15_collate_fn,
@@ -168,7 +166,6 @@ def main():
             experiment_logs
         )
 
-        # Save logs for this epoch
         with open(f"experiment_logs/epoch_{epoch}.json", "w") as f:
             json.dump(experiment_logs, f, indent=2)
 
