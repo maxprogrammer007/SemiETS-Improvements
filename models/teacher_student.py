@@ -24,7 +24,9 @@ class TeacherStudentSSL(nn.Module):
         tau=0.1,
         alpha=1.0,
         ema_decay=0.999,
-        consistency_weight=0.1
+        consistency_weight=0.1,
+        max_reliability=0.2,
+        warmup_epochs=5
     ):
         super().__init__()
 
@@ -49,7 +51,18 @@ class TeacherStudentSSL(nn.Module):
         self.ema_decay = ema_decay
         self.consistency_weight = consistency_weight
 
+        # Reliability curriculum
+        self.max_reliability = max_reliability
+        self.warmup_epochs = warmup_epochs
+        self.current_epoch = 0  # updated externally
+
         self.freeze_teacher()
+
+    # --------------------------------------------------
+    # Epoch setter (called from training loop)
+    # --------------------------------------------------
+    def set_epoch(self, epoch):
+        self.current_epoch = epoch
 
     # --------------------------------------------------
     # Teacher utilities
@@ -69,25 +82,23 @@ class TeacherStudentSSL(nn.Module):
             self.teacher_backbone.parameters(),
             self.student_backbone.parameters()
         ):
-            t_param.data = (
-                self.ema_decay * t_param.data
-                + (1.0 - self.ema_decay) * s_param.data
+            t_param.data.mul_(self.ema_decay).add_(
+                s_param.data, alpha=(1.0 - self.ema_decay)
             )
 
         for t_param, s_param in zip(
             self.teacher_recognizer.parameters(),
             self.student_recognizer.parameters()
         ):
-            t_param.data = (
-                self.ema_decay * t_param.data
-                + (1.0 - self.ema_decay) * s_param.data
+            t_param.data.mul_(self.ema_decay).add_(
+                s_param.data, alpha=(1.0 - self.ema_decay)
             )
 
     @torch.no_grad()
     def teacher_forward(self, images):
         feats = self.teacher_backbone(images)
         log_probs = self.teacher_recognizer(feats)
-        return log_probs
+        return log_probs  # (B, T, V)
 
     # --------------------------------------------------
     # Student forward
@@ -95,7 +106,7 @@ class TeacherStudentSSL(nn.Module):
     def student_forward(self, images):
         feats = self.student_backbone(images)
         log_probs = self.student_recognizer(feats)
-        return log_probs
+        return log_probs  # (B, T, V)
 
     # --------------------------------------------------
     # Main forward
@@ -105,13 +116,16 @@ class TeacherStudentSSL(nn.Module):
         images,
         det_conf,
         targets,
-        input_lengths,
         target_lengths
     ):
         """
         images: (B, 3, H, W)
         det_conf: (B,)
+        targets: (sum(target_lengths),)
+        target_lengths: (B,)
         """
+
+        B = images.size(0)
 
         # ======================================
         # Teacher multi-view predictions
@@ -127,21 +141,41 @@ class TeacherStudentSSL(nn.Module):
                 self.teacher_forward(v) for v in views
             ]
 
-            # Main teacher output (reference view)
-            teacher_log_probs = teacher_outputs[0]
+            teacher_log_probs = teacher_outputs[0]  # (B, T, V)
 
         # ======================================
-        # Soft reliability (TD / TR / CC replacement)
+        # Soft reliability (TD / TR / CC)
         # ======================================
         det_w = detection_reliability(det_conf, self.det_thr, self.tau)
         rec_w = recognition_reliability(teacher_log_probs, self.alpha)
         final_w = combine_reliability(det_w, rec_w)
 
         # ======================================
+        # Reliability warm-up (soft curriculum)
+        # ======================================
+        ramp = min(
+            (self.current_epoch + 1) / max(self.warmup_epochs, 1),
+            1.0
+        )
+        max_w = self.max_reliability * ramp
+        final_w = torch.clamp(final_w, max=max_w)
+
+        # ======================================
         # Student prediction
         # ======================================
-        student_log_probs = self.student_forward(images)
+        student_log_probs = self.student_forward(images)  # (B, T, V)
         student_log_probs = student_log_probs.permute(1, 0, 2)  # (T, B, V)
+
+        # ======================================
+        # Dynamically compute input_lengths
+        # ======================================
+        T = student_log_probs.size(0)
+        input_lengths = torch.full(
+            size=(B,),
+            fill_value=T,
+            dtype=torch.long,
+            device=student_log_probs.device
+        )
 
         # ======================================
         # Weighted CTC loss

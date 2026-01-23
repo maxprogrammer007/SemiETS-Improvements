@@ -10,7 +10,8 @@ from models.recognizer import CRNN
 from models.teacher_student import TeacherStudentSSL
 from losses.weighted_loss import WeightedCTCLoss
 
-from data.ic15_subset import IC15Subset, ic15_collate_fn
+
+from ctw1500_subset import CTW1500Subset, ctw1500_collate_fn
 
 
 # ----------------------------------
@@ -35,7 +36,7 @@ def train_one_epoch(
         images = batch["images"].to(device)
         det_conf = batch["det_conf"].to(device)
         targets = batch["targets"].to(device)
-        input_lengths = batch["input_lengths"].to(device)
+        
         target_lengths = batch["target_lengths"].to(device)
 
         image_ids = batch.get("image_ids", None)
@@ -45,12 +46,12 @@ def train_one_epoch(
 
         with autocast(device_type="cuda"):
             loss, weights = ssl_model(
-                images,
-                det_conf,
-                targets,
-                input_lengths,
-                target_lengths
+                    images,
+                    det_conf,
+                    targets,
+                    target_lengths
             )
+
 
         scaler.scale(loss).backward()
         scaler.step(optimizer)
@@ -130,11 +131,11 @@ def main():
     # ----------------------------------
     vocab = "0123456789abcdefghijklmnopqrstuvwxyz"
 
-    dataset = IC15Subset(
-        image_dir="D:/semiETS stuffs/semiets_scratch/data/ic15/images",
-        annotation_json="D:/semiETS stuffs/semiets_scratch/data/ic15/ic15_subset.json",
+    dataset = CTW1500Subset(
+        image_dir="C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\SemiETS-Improvements\\data\\ctw\\images",
+        annotation_dir="C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\SemiETS-Improvements\\data\\ctw\\ctw1500_train_labels",
         vocab=vocab,
-        max_samples=100,
+        max_samples=1000,
         train=True
     )
 
@@ -143,7 +144,7 @@ def main():
         batch_size=2,
         shuffle=True,
         num_workers=2,
-        collate_fn=ic15_collate_fn,
+        collate_fn=ctw1500_collate_fn,
         pin_memory=True
     )
 
@@ -155,7 +156,7 @@ def main():
     epochs = 5
     for epoch in range(epochs):
         experiment_logs = []
-
+        ssl_model.set_epoch(epoch)
         avg_loss = train_one_epoch(
             ssl_model,
             dataloader,

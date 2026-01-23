@@ -1,3 +1,5 @@
+# train_ssl_baseline.py
+
 import torch
 from torch.optim import Adam
 from torch.amp import autocast, GradScaler
@@ -10,13 +12,13 @@ from models.recognizer import CRNN
 from models.teacher_student import TeacherStudentSSL
 from losses.weighted_loss import WeightedCTCLoss
 
-from data.ic15_subset import IC15Subset, ic15_collate_fn
+from ctw1500_subset import CTW1500Subset, ctw1500_collate_fn
 
 
 # ----------------------------------
-# SemiETS-style detection threshold
+# SemiETS hard threshold
 # ----------------------------------
-T_D = 0.5   # hard threshold
+T_D = 0.5
 
 
 def train_one_epoch(
@@ -35,7 +37,6 @@ def train_one_epoch(
         images = batch["images"].to(device)
         det_conf = batch["det_conf"].to(device)
         targets = batch["targets"].to(device)
-        input_lengths = batch["input_lengths"].to(device)
         target_lengths = batch["target_lengths"].to(device)
 
         image_ids = batch.get("image_ids", None)
@@ -44,16 +45,32 @@ def train_one_epoch(
         optimizer.zero_grad(set_to_none=True)
 
         with autocast(device_type="cuda"):
-            # Forward student on full batch
-            student_log_probs = ssl_model.student_forward(images)
-            student_log_probs = student_log_probs.permute(1, 0, 2)
+            # ----------------------------------
+            # Student forward
+            # ----------------------------------
+            student_log_probs = ssl_model.student_forward(images)  # (B, T, V)
+            student_log_probs = student_log_probs.permute(1, 0, 2)  # (T, B, V)
 
             # ----------------------------------
-            # HARD BINARY WEIGHTS (Baseline)
+            # CTC-safe input lengths
+            # ----------------------------------
+            T = student_log_probs.size(0)
+            B = student_log_probs.size(1)
+            input_lengths = torch.full(
+                size=(B,),
+                fill_value=T,
+                dtype=torch.long,
+                device=student_log_probs.device
+            )
+
+            # ----------------------------------
+            # HARD binary acceptance (baseline)
             # ----------------------------------
             baseline_weights = (det_conf > T_D).float()
 
-            # CTC loss with binary weights
+            # ----------------------------------
+            # Weighted CTC loss
+            # ----------------------------------
             loss = ssl_model.criterion(
                 student_log_probs,
                 targets,
@@ -66,24 +83,25 @@ def train_one_epoch(
         scaler.step(optimizer)
         scaler.update()
 
-        # EMA update (teacher)
+        # EMA update (kept for fair comparison)
         ssl_model.update_teacher()
 
         total_loss += loss.item()
 
         # ----------------------------------
-        # Logging for failure analysis
+        # Logging (failure analysis)
         # ----------------------------------
         det_conf_cpu = det_conf.detach().cpu()
+        weights_cpu = baseline_weights.detach().cpu()
 
-        for i in range(len(det_conf_cpu)):
+        for i in range(B):
             log_entry = {
                 "epoch": epoch,
                 "step": step,
-                "image_id": image_ids[i] if image_ids is not None else f"idx_{step}_{i}",
+                "image_id": image_ids[i] if image_ids else f"idx_{step}_{i}",
                 "det_conf": float(det_conf_cpu[i]),
-                "baseline_accept": bool(det_conf_cpu[i] > T_D),
-                "loss": float(loss.item()) if det_conf_cpu[i] > T_D else 0.0
+                "baseline_accept": bool(weights_cpu[i]),
+                "loss": float(loss.item()) if weights_cpu[i] > 0 else 0.0
             }
 
             if gt_texts is not None:
@@ -96,7 +114,7 @@ def train_one_epoch(
             print(
                 f"[Step {step}] "
                 f"Loss: {loss.item():.4f} | "
-                f"Accepted samples: {baseline_weights.sum().item()}/{len(baseline_weights)}"
+                f"Accepted samples: {weights_cpu.sum().item()}/{B}"
             )
 
     return total_loss / max(len(dataloader), 1)
@@ -138,22 +156,21 @@ def main():
     # ----------------------------------
     vocab = "0123456789abcdefghijklmnopqrstuvwxyz"
 
-    dataset = IC15Subset(
-        image_dir="D:/semiETS stuffs/semiets_scratch/data/ic15/images",
-        annotation_json="D:/semiETS stuffs/semiets_scratch/data/ic15/ic15_subset.json",
-        vocab=vocab,
-        max_samples=100,
-        train=True
-    )
+    dataset = CTW1500Subset(
+    image_dir="C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\SemiETS-Improvements\\data\\ctw\\images",
+    annotation_dir="C:\\Users\\abhin\\OneDrive\\Documents\\GitHub\\SemiETS-Improvements\\data\\ctw\\ctw1500_train_labels",
+    vocab=vocab,
+    max_samples=1000
+)
 
     dataloader = DataLoader(
-        dataset,
-        batch_size=2,
-        shuffle=True,
-        num_workers=2,
-        collate_fn=ic15_collate_fn,
-        pin_memory=True
-    )
+    dataset,
+    batch_size=2,
+    shuffle=True,
+    num_workers=2,
+    collate_fn=ctw1500_collate_fn,
+    pin_memory=True
+)
 
     # ----------------------------------
     # Training loop
